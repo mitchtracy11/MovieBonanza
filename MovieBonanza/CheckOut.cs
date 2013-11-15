@@ -26,5 +26,11 @@ namespace MovieBonanza
         {
 
         }
+
+        private void OKbutton_Click(object sender, EventArgs e)
+        {
+            // Terminate the Application
+            Application.Exit();
+        }
     }
 }

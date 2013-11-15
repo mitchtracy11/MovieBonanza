@@ -15,8 +15,41 @@ using System.Windows.Forms;
 
 namespace MovieBonanza
 {
+    //private int Price = PriceTextBox;
     public partial class OrderForm : Form
     {
+
+        // Declare other Forms associated with this form
+        public Form previousForm;
+        AboutBox myAboutForm = new AboutBox();
+
+        private String Price;
+        private String Title;
+        private String Category;
+
+        public string MovieCategory
+        {
+            set
+            {
+                Category = value;
+            }
+        }
+
+        public string MovieSelected
+        {
+            set
+            {
+                Title = value;
+            }
+        }
+
+        public string MoviePrice
+        {
+            set
+            {
+                Price = value;
+            }
+        } 
         public OrderForm()
         {
             InitializeComponent();
@@ -29,10 +62,54 @@ namespace MovieBonanza
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Begin the process for print preview of all items
-            printPreviewDialog1.Document = PrintAllPrintDocument;
-            printPreviewDialog1.ShowDialog();
+            // Produce a print preview of the form
+            printForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPreview;
+            printForm1.Print();
 
-        } // end PreviewAllToolStripMenuItem_Click
+        }
+
+        private void cancelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Terminate the Application
+            Application.Exit();
+        }
+
+        private void OrderForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OrderForm_Activated(object sender, EventArgs e)
+        {
+            // Display user data in the form labels every time the form is activated
+            CostTextBox2.Text = Price;
+            TitletextBox2.Text = Title;
+            CategorytextBox2.Text = Category;
+        }
+
+        private void Streambutton_Click(object sender, EventArgs e)
+        {
+            new CheckOut().Show();//start job form
+            Hide();// hides form
+        }
+
+        private void Backbutton_Click(object sender, EventArgs e)
+        {
+            // Show the previous form and hide this form
+            previousForm.Show();
+            this.Hide();
+        }
+
+        private void Cancelbutton_Click(object sender, EventArgs e)
+        {
+            // Terminate the Application
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Show the About Form Dialog
+            myAboutForm.ShowDialog();
+        }
     }
 }

@@ -125,6 +125,66 @@
   <ItemGroup>
     <None Include="Resources\MitchLogo1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cedarrapids.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\companymen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\deathrace2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\footloose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\gnomeoandjuliet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\iamnumberfour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\justgowithit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\nostringsattached.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\realsteel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sanctum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\seasonofthewitch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\thedilemma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\theeagle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\thegreenhornet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\themechanic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\theotherwoman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\therite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\theroommate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\thewayback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\waitingforever.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

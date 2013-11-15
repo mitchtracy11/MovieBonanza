@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.OKbutton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.StartLabel = new System.Windows.Forms.Label();
+            this.MoneyLabel = new System.Windows.Forms.Label();
+            this.MidLabel = new System.Windows.Forms.Label();
+            this.MovieLabel1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // OKbutton
@@ -43,52 +43,55 @@
             this.OKbutton.TabIndex = 0;
             this.OKbutton.Text = "OK";
             this.OKbutton.UseVisualStyleBackColor = true;
+            this.OKbutton.Click += new System.EventHandler(this.OKbutton_Click);
             // 
-            // label1
+            // StartLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(188, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.StartLabel.AutoSize = true;
+            this.StartLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartLabel.Location = new System.Drawing.Point(50, 54);
+            this.StartLabel.Name = "StartLabel";
+            this.StartLabel.Size = new System.Drawing.Size(248, 24);
+            this.StartLabel.TabIndex = 1;
+            this.StartLabel.Text = "You Have Been Charged:";
             // 
-            // label2
+            // MoneyLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(326, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.MoneyLabel.AutoSize = true;
+            this.MoneyLabel.Location = new System.Drawing.Point(326, 62);
+            this.MoneyLabel.Name = "MoneyLabel";
+            this.MoneyLabel.Size = new System.Drawing.Size(19, 13);
+            this.MoneyLabel.TabIndex = 2;
+            this.MoneyLabel.Text = "$$";
             // 
-            // label3
+            // MidLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(188, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.MidLabel.AutoSize = true;
+            this.MidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MidLabel.Location = new System.Drawing.Point(50, 130);
+            this.MidLabel.Name = "MidLabel";
+            this.MidLabel.Size = new System.Drawing.Size(214, 24);
+            this.MidLabel.TabIndex = 3;
+            this.MidLabel.Text = "ThankYou And Enjoy:";
             // 
-            // label4
+            // MovieLabel1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(326, 141);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.MovieLabel1.AutoSize = true;
+            this.MovieLabel1.Location = new System.Drawing.Point(326, 141);
+            this.MovieLabel1.Name = "MovieLabel1";
+            this.MovieLabel1.Size = new System.Drawing.Size(27, 13);
+            this.MovieLabel1.TabIndex = 4;
+            this.MovieLabel1.Text = "xxxx";
             // 
             // CheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 233);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.MovieLabel1);
+            this.Controls.Add(this.MidLabel);
+            this.Controls.Add(this.MoneyLabel);
+            this.Controls.Add(this.StartLabel);
             this.Controls.Add(this.OKbutton);
             this.Name = "CheckOut";
             this.Text = "CheckOut";
@@ -101,9 +104,9 @@
         #endregion
 
         private System.Windows.Forms.Button OKbutton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label StartLabel;
+        private System.Windows.Forms.Label MoneyLabel;
+        private System.Windows.Forms.Label MidLabel;
+        private System.Windows.Forms.Label MovieLabel1;
     }
 }

@@ -78,6 +78,7 @@
             this.NextButton.TabIndex = 7;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // PriceTextBox
             // 
@@ -132,9 +133,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(369, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(400, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(126, 135);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -156,16 +158,16 @@
             "Season of the Witch ",
             "The Dilemma",
             "The Eagle",
-            "The Green\tHornet",
+            "The Green Hornet",
             "The Mechanic",
-            "The Other\tWoman",
+            "The Other Woman",
             "The Rite",
             "The Roommate",
             "The Way Back",
             "Waiting for Forever"});
             this.MovieListBox.Location = new System.Drawing.Point(12, 60);
             this.MovieListBox.Name = "MovieListBox";
-            this.MovieListBox.Size = new System.Drawing.Size(222, 224);
+            this.MovieListBox.Size = new System.Drawing.Size(269, 224);
             this.MovieListBox.Sorted = true;
             this.MovieListBox.TabIndex = 4;
             this.MovieListBox.SelectedIndexChanged += new System.EventHandler(this.MovieListBox_SelectedIndexChanged);
@@ -186,6 +188,7 @@
             this.Name = "MovieBonanza";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Bonanza";
+            this.Load += new System.EventHandler(this.MovieBonanza_Load);
             this.MovieGroupBox.ResumeLayout(false);
             this.MovieGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
